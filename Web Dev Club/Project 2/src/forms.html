@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <style>
+        fieldset {
+            width: 350px;
+            padding-left: 40px;
+            margin-top: -40px;
+        }
+
+        body,html {
+            
+            /* height: 100vh; */
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+
+        #btn {
+            width: 100px;
+            font-size: large;
+            height: 40px;
+            margin-left: 100px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        #btn:hover {
+            color: rgb(236, 232, 232);
+
+            background-color: rgb(0, 0, 0);
+
+            transform: scale(1.1);
+
+        }
+
+        h1 {
+            margin-left: 70px;
+            width: 220px;
+            padding: 20px;
+
+        }
+
+        legend {
+            margin-left: 85px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .contactus {
+            margin-left: 700px;
+            margin-top: 300px;
+
+        }
+
+        body {
+            background-color: rgb(236, 197, 155);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        fieldset {
+            border: 2px solid;
+            border-radius: 5px;
+            background-color: rgb(251, 198, 148);
+
+        }
+
+        /* GPT told me to add */
+        input{
+            width: 90%;
+            border-radius: 5px;
+            margin-top: 5px;
+            padding: 5px;
+
+        }
+        
+
+        input:focus, textarea:focus {
+            border: 2px solid rgb(240, 82, 82); 
+            outline: none; 
+            background-color: rgb(230, 230, 250);
+            box-shadow: 0 0 8px rgba(0, 0, 255, 0.5);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="contactus">
+        
+        <H1>CONTACT US</H1>
+        <fieldset>
+            <legend>USER DETAILS</legend>
+            <form action="">
+                <label for="Name"> ENTER YOU NAME :-</label>
+                <input type="text" id="Name" name="name" placeholder="Prakhar Sahu" required minlength="2">
+                
+                <br>
+                <br>
+                <label for="Email">ENTER YOUR MAIL :-</label>
+                <input type="email" id="Email" name="email" placeholder="prakhar@gmail.com" required>
+                <br>
+                <br>
+                <label for="Mob">ENTER YOUR MOB NO :-</label>
+                <input type="text" id="Mob" name="mob" placeholder="7651821713" required pattern="\d{10}"  >
+                <br>
+                <br>
+                
+                <textarea name="Textarea" id="textarea" cols="38" rows="12"
+                placeholder="Enter Your Message"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Click Here" id="btn">
+                
+            </form>
+            
+        </fieldset>
+    </div>
+
+</body>
+
+</html>

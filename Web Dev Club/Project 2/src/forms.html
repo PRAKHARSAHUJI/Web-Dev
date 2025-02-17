@@ -13,14 +13,15 @@
             margin-top: -40px;
         }
 
-        body,html {
-            
-            /* height: 100vh; */
+        body {
+
+            height: 100vh;
             width: 100vw;
             margin: 0;
             padding: 0;
-            
+
         }
+
 
 
         #btn {
@@ -57,11 +58,12 @@
             margin-top: 20px;
         }
 
-        .contactus {
+        /* 
+        .contactus{
             margin-left: 700px;
             margin-top: 300px;
-
-        }
+        } 
+        */
 
         body {
             background-color: rgb(236, 197, 155);
@@ -79,54 +81,69 @@
         }
 
         /* GPT told me to add */
-        input{
+        input {
             width: 90%;
             border-radius: 5px;
             margin-top: 5px;
             padding: 5px;
         }
-        
 
-        input:focus, textarea:focus {
-            border: 2px solid rgb(240, 82, 82); 
-            outline: none; 
+
+        input:focus,
+        textarea:focus {
+            border: 2px solid rgb(240, 82, 82);
+            outline: none;
             background-color: rgb(230, 230, 250);
             box-shadow: 0 0 8px rgba(0, 0, 255, 0.5);
+        }
+
+        .main {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
         }
     </style>
 
 </head>
 
 <body>
-    <div class="contactus">
-        
-        <H1>CONTACT US</H1>
-        <fieldset>
-            <legend>USER DETAILS</legend>
-            <form action="">
-                <label for="Name"> ENTER YOU NAME :-</label>
-                <input type="text" id="Name" name="name" placeholder="Prakhar Sahu" required minlength="2">
-                
-                <br>
-                <br>
-                <label for="Email">ENTER YOUR MAIL :-</label>
-                <input type="email" id="Email" name="email" placeholder="prakhar@gmail.com" required>
-                <br>
-                <br>
-                <label for="Mob">ENTER YOUR MOB NO :-</label>
-                <input type="text" id="Mob" name="mob" placeholder="7651821713" required pattern="\d{10}"  >
-                <br>
-                <br>
-                
-                <textarea name="Textarea" id="textarea" cols="38" rows="12"
-                placeholder="Enter Your Message"></textarea>
-                <br>
-                <br>
-                <input type="submit" value="Click Here" id="btn">
-                
-            </form>
-            
-        </fieldset>
+
+
+    <div class="main">
+
+        <div class="contactus">
+
+            <H1>CONTACT US</H1>
+            <fieldset>
+                <legend>USER DETAILS</legend>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="5ca73d14-a0b5-49f2-95dd-1b98e9df3e18">
+                    <label for="Name"> ENTER YOU NAME :-</label>
+                    <input type="text" id="Name" name="name" placeholder="Prakhar Sahu" required minlength="2">
+
+                    <br>
+                    <br>
+                    <label for="Email">ENTER YOUR MAIL :-</label>
+                    <input type="email" id="Email" name="email" placeholder="prakhar@gmail.com" required>
+                    <br>
+                    <br>
+                    <label for="Mob">ENTER YOUR MOB NO :-</label>
+                    <input type="text" id="Mob" name="mob" placeholder="7651821713" required pattern="\d{10}">
+                    <br>
+                    <br>
+
+                    <textarea name="Textarea" id="textarea" cols="38" rows="12"
+                        placeholder="Enter Your Message"></textarea>
+                    <br>
+                    <br>
+                    <input type="submit" value="Click Here" id="btn">
+
+                </form>
+
+            </fieldset>
+        </div>
     </div>
 
 </body>

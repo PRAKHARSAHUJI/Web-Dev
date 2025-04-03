@@ -400,17 +400,12 @@ console.log(typeof name); // "object"
 
 ### **Major Differences**
 
-| Feature | `"prakhar"` (Primitive) | `new String("prakhar")` (Object) |
-
-| --- | --- | --- |
-
-| **Type** | `string` (primitive) | `object` |
-
-| **Storage** | Stored as a simple value | Stored as an object |
-
-| **Performance** | Faster | Slower |
-
-| **Comparison** | Compares values | Compares references |
+| Feature       | `"prakhar"` (Primitive) | `new String("prakhar")` (Object) |
+|--------------|------------------------|---------------------------------|
+| **Type**      | `string` (primitive)    | `object` (instance of `String`) |
+| **Storage**   | Stored as a simple value | Stored in heap memory as an object |
+| **Performance** | Faster (lightweight)  | Slower (object overhead) |
+| **Comparison** | Compares values (`===` works) | Compares references (`===` fails) |
 
 * * * * *
 

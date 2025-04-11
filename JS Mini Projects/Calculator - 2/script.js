@@ -52,10 +52,6 @@ C.addEventListener("click" , function(event){
 
 })
 
-function appendToDisplay(input){
-    number.value += input;
-};
-
 equal.addEventListener("click",function(event){
     try {
         number.value = eval(number.value);

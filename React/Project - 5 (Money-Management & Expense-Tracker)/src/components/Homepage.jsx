@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa";
 import {useNavigate} from 'react-router-dom'
+import appImage from '../assets/App3.png';
 
 function Homepage() {
 
@@ -19,7 +20,7 @@ function Homepage() {
             </div> */}
     
           <div className='flex justify-center'>
-            <img src="./public/App3.png" alt="" className=' h-[600px] w-[500px] rounded-2xl' />
+            <img src="{appImage}" alt="" className=' h-[600px] w-[500px] rounded-2xl' />
           </div>
     
     

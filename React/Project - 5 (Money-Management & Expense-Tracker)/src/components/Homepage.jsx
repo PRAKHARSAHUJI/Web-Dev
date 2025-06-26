@@ -20,7 +20,7 @@ function Homepage() {
             </div> */}
     
           <div className='flex justify-center'>
-            <img src="{appImage}" alt="" className=' h-[600px] w-[500px] rounded-2xl' />
+            <img src={appImage} alt="" className=' h-[600px] w-[500px] rounded-2xl' />
           </div>
     
     

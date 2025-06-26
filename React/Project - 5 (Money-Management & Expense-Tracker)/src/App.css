@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+}
+
+body{
+  background-image:url(/Dark.png) ;
+  font-family: 'Cormorant', serif;
+}
+
+.selected-red::selection {
+  background-color: rgb(231, 59, 59);
+  color: black; 
+
+}
